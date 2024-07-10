@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style/styles.css"> <!-- link to external stylesheet -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header> 
+        <nav>
+            <ul>
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="me">
+        <div class="hero-content">
+            <h1>Welcome to my website!</h1>
+            <p>I'm [Name], a [ Profession] with a passion for [Industry/Field].</p>
+            <button onclick="document.location='default.asp'">HTML Tutorial</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="profile-picture">
+            <img src="profile-picture.jpg" alt="Profile Picture">
+        </div>
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            <h3>Skills</h3>
+            <ul>
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+                <li>Skill 3</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            </div>
+            <div class="project">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-info">
+            <p><strong>Email:</strong> [email@example.com](mailto:email@example.com)</p>
+            <p><strong>Phone:</strong> 555-555-5555</p>
+            <p><strong>Address:</strong> 123 Main St, Anytown, USA</p>
+        </div>
+        <div class="social-media" style="margin-right: 20px;">
+            <a href="https://twitter.com/example" target="_blank">Twitter<i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com/example" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/example" target="_blank">Instagram<i class="fab fa-instagram"></i></a>
+        </div>
+        <div>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </section>
+</body>
