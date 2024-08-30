@@ -18,3 +18,20 @@ center{
     border: 3px solid green;
     padding: 10px;
     }
+
+    label, input, button {
+      font-size: inherit;
+      padding: 0.2em;
+      margin: 0.1em 0.2em;
+      text-align: center;
+      /* the following ensures they're all using the same box-model for rendering */
+      -moz-box-sizing: content-box; /* or `border-box` */
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+  }
+  header {display: inline; justify-content: center;}
+
+  ul.myUL {
+    display: inline-block;
+    text-align: left;
+  }
