@@ -35,3 +35,24 @@ center{
     display: inline-block;
     text-align: left;
   }
+
+  .column {
+    float: left;
+    width: 75.54%;
+    height: 63rem;
+    border: 1px solid #000;
+  }
+  .smokey1 {
+    float: left;
+    width: 12.23%;
+    height: 63rem;
+    border: 1px solid #000;
+    background-image: ;
+  }
+  
+  .smokey2 {
+    float: left;
+    width: 12.23%;
+    height: 63rem;
+    border: 1px solid #000;
+  }
