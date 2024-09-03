@@ -1,3 +1,9 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+img {
+  border-radius: 50%;
+}
+
 ul {
   display: inline;
   margin-top: 1em;
