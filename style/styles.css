@@ -49,12 +49,12 @@ center{
     padding: 0; /* Remove default padding */
 }
 
-.grey-item a {
+.btn-link a {
   color: black; /* Default grey color for links */
   transition: color 0.3s; /* Smooth transition */
 }
 
-.grey-item a:hover {
+.btn-link a:hover {
   color: blue; /* Change color on hover */
 }
 
