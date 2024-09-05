@@ -19,12 +19,12 @@
             <div class="card-body d-flex flex-column align-items-center">
                 <nav class="col-12 mt-5">
                     <ul class="myUL list-unstyled text-center" style="padding-top: 10px;">
-                        <li><a id="homeCard" href="/about.html" class="btn btn-link" role="button">Home</a></li>
-                        <li><a href="aboutCard" class="btn btn-link" role="button">About</a></li>
-                        <li><a href="skillsCard" class="btn btn-link" role="button">Skills</a></li>
-                        <li><a href="educationCard" class="btn btn-link" role="button">Education</a></li>
-                        <li><a href="experienceCard" class="btn btn-link" role="button">Experience</a></li>
-                        <li><a href="contactCard" class="btn btn-link" role="button">Contact</a></li>
+                        <li><a id="btnHC" href="btnHC" class="btn btn-link" role="button">Home</a></li>
+                        <li><a id="btnAC" href="btnAC" class="btn btn-link" role="button">About</a></li>
+                        <li><a id="btnKC" href="btnKC" class="btn btn-link" role="button">Skills</a></li>
+                        <li><a id="btnEC" href="btnEC" class="btn btn-link" role="button">Education</a></li>
+                        <li><a id="btnHEX" href="btnHEX" class="btn btn-link" role="button">Experience</a></li>
+                        <li><a id="btnCC" href="btnCC" class="btn btn-link" role="button">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -119,4 +119,12 @@
             $(this).css('color', 'grey'); // Change back to grey when not hovered
         }
     );
+
+
+
+    $('#btnAC').on('click', function () {
+            $('#divLogin').slideUp(function () {
+                $('#btnAC').slideDown();
+            });
+        })
 </script>
