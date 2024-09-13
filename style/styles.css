@@ -6,7 +6,6 @@
 
 .card {
   height: 100%; /* Take up the full height of the parent */
-  border: 1px solid red; /* Border around the card */
   box-sizing: border-box; /* Include border in the card’s dimensions */
   margin: 0; /* Remove any default margin */
   align-items: center;
@@ -49,11 +48,8 @@ li{
 
 h4{
   place-items: top;
-}
-
-.card-body {
-    position: relative; /* Allows absolute positioning of the buttons */
-    padding-bottom: 60px; /* Add space at the bottom for buttons */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 28px;
 }
 
 .social-buttons {
@@ -84,4 +80,39 @@ h4{
 .social-button:hover {
     background-color: #f0f0f0; /* Background color on hover */
     border-color: #aaa; /* Border color on hover */
+}
+
+
+
+
+
+/* Cards individual css */
+
+.homeCard{
+  background-color: black;
+}
+
+.aboutCard{
+  display: none;
+   background-color: lightpink;
+}
+
+.skillsCard{
+  display: none;
+}
+
+.educationCard{
+  display: none;
+}
+.experienceCard{
+  display: none;
+}
+
+.contactCard{
+  display: none;
+}
+
+.contactCard-body {
+  position: relative; /* Allows absolute positioning of the buttons */
+  padding-bottom: 60px; /* Add space at the bottom for buttons */
 }
