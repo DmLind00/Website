@@ -88,8 +88,50 @@ h4{
 
 /* Cards individual css */
 
-.homeCard{
-  background-color: black;
+.homeCard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+  overflow: hidden; /* Ensure no content overflows */
+}
+
+.homeCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(4px); /* Apply the blur to the pseudo-element */
+  z-index: 1; /* Put it behind the text */
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Makes the container fill the entire viewport */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  z-index: 2;
+}
+
+.center {
+  font-size: 100px;
+  text-align: center;
+  color: Black; /* Optional: to make the text more visible */
+  margin: 10px 0;
+}
+
+.minitext{
+  font-size: 33px;
 }
 
 .aboutCard{
@@ -116,3 +158,11 @@ h4{
   position: relative; /* Allows absolute positioning of the buttons */
   padding-bottom: 60px; /* Add space at the bottom for buttons */
 }
+
+.background-image {
+  width: 100vh;
+  height: 100vh;
+  display: block;
+}
+
+
