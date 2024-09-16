@@ -1,14 +1,40 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Disable scrolling for the entire page */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh; /* Takes full viewport height */
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    height: auto; /* Let the height adjust based on content */
+    padding: 10px;
+    gap: 15px;
+  }
+}
+
+.lsP header img {
+  width: 150px; /* Reduce image size on smaller screens */
+  height: auto;
+}
+
+.card {
+  height: 100%;
+  overflow: hidden; /* Prevent scrolling inside the card */
+}
+
 .row {
   display: flex;
   height: 100vh; /* Full height of the viewport */
   margin: 0; /* Remove any default margin */
-}
-
-.card {
-  height: 100%; /* Take up the full height of the parent */
-  box-sizing: border-box; /* Include border in the card’s dimensions */
-  margin: 0; /* Remove any default margin */
-  align-items: center;
 }
 
 .lsP, .rsP {
@@ -27,18 +53,20 @@
 .rsP {
   flex: 2; /* Take 2/3 of available width */
   max-width: 67%;
+  overflow: hidden; /* Prevent overflow in the right panel */
 }
 
-h3{
+h3 {
   padding-top: 2.438rem;
 }
-li{
+
+li {
   padding-top: 4.483rem;
 }
 
-.Btn-nav{
+.Btn-nav {
   color: black;
-  font-size: 1.8em
+  font-size: 1.8em;
 }
 
 .Btn-nav:hover {
@@ -46,51 +74,47 @@ li{
   text-decoration: underline; /* Show the underline on hover */
 }
 
-h4{
+h4 {
   place-items: top;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 28px;
 }
 
 .social-buttons {
-    position: absolute; /* Positioning buttons relative to the card-body */
-    bottom: 10px; /* Distance from the bottom of the card-body */
-    left: 50%; /* Center the buttons horizontally */
-    transform: translateX(-50%); /* Adjust alignment */
-    display: flex; /* Align buttons in a row */
-    gap: 10px; /* Space between buttons */
+  position: absolute; /* Positioning buttons relative to the card-body */
+  bottom: 10px; /* Distance from the bottom of the card-body */
+  left: 50%; /* Center the buttons horizontally */
+  transform: translateX(-50%); /* Adjust alignment */
+  display: flex; /* Align buttons in a row */
+  gap: 10px; /* Space between buttons */
 }
 
 .social-button {
-    display: block; /* Ensures block-level display for positioning */
-    width: 150px; /* Set the width of the button */
-    height: 150px; /* Set the height of the button */
-    border-radius: 50%; /* Make the button round */
-    overflow: hidden; /* Hide overflow to maintain round shape */
-    border: 2px solid #ddd; /* Optional: border for the button */
-    transition: background-color 0.3s, border-color 0.3s; /* Smooth hover effect */
+  display: block; /* Ensures block-level display for positioning */
+  width: 150px; /* Set the width of the button */
+  height: 150px; /* Set the height of the button */
+  border-radius: 50%; /* Make the button round */
+  overflow: hidden; /* Hide overflow to maintain round shape */
+  border: 2px solid #ddd; /* Optional: border for the button */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth hover effect */
 }
 
 .social-button img {
-    width: 100%; /* Scale image to fit the button */
-    height: 100%; /* Scale image to fit the button */
-    object-fit: fill; /* Ensure the image covers the button area */
+  width: 100%; /* Scale image to fit the button */
+  height: 100%; /* Scale image to fit the button */
+  object-fit: fill; /* Ensure the image covers the button area */
 }
 
 .social-button:hover {
-    background-color: #f0f0f0; /* Background color on hover */
-    border-color: #aaa; /* Border color on hover */
+  background-color: #f0f0f0; /* Background color on hover */
+  border-color: #aaa; /* Border color on hover */
 }
-
-
-
-
 
 /* Cards individual css */
 
 .homeCard {
   position: relative;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   height: 100vh; /* Adjust as needed */
@@ -130,27 +154,28 @@ h4{
   margin: 10px 0;
 }
 
-.minitext{
+.minitext {
   font-size: 33px;
 }
 
-.aboutCard{
+.aboutCard {
   display: none;
-   background-color: lightpink;
+  align-items: center;
 }
 
-.skillsCard{
-  display: none;
-}
-
-.educationCard{
-  display: none;
-}
-.experienceCard{
+.skillsCard {
   display: none;
 }
 
-.contactCard{
+.educationCard {
+  display: none;
+}
+
+.experienceCard {
+  display: flex;
+}
+
+.contactCard {
   display: none;
 }
 
@@ -165,4 +190,83 @@ h4{
   display: block;
 }
 
+.card {
+  height: 100%;
+  overflow: hidden; /* Prevent scrolling inside the card */
+}
 
+h4 {
+  margin-top: 20px; /* Ensure spacing at the top */
+  text-align: center; /* Center the text */
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+.greeting {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.introduction {
+  margin: 5px 0;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column; /* Stack left and right panels vertically */
+    height: auto; /* Adjust height to fit content */
+  }
+
+  .lsP, .rsP {
+    max-width: 100%; /* Allow panels to take full width */
+    flex: none; /* Remove flexible width adjustment */
+  }
+
+  .lsP {
+    width: 100%;
+    background-color: #f3f4f8;
+  }
+
+  .rsP {
+    width: 100%;
+    overflow: visible; /* Allow overflow to handle content */
+  }
+
+  .social-buttons {
+    position: static; /* Reset positioning for smaller screens */
+    margin-top: 20px; /* Add margin on top */
+    justify-content: center; /* Center buttons horizontally */
+  }
+
+  .Btn-nav {
+    font-size: 1.2em; /* Adjust font size for smaller screens */
+  }
+
+  .homeCard .container .center {
+    font-size: 2em; /* Adjust text size for smaller screens */
+  }
+}
